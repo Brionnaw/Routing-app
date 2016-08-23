@@ -14,7 +14,14 @@ var MyApp;
             return Page2Controller;
         }());
         Controllers.Page2Controller = Page2Controller;
+        var Page3Controller = (function () {
+            function Page3Controller() {
+            }
+            return Page3Controller;
+        }());
+        Controllers.Page3Controller = Page3Controller;
         angular.module("app").controller('Page1Controller', Page1Controller);
         angular.module("app").controller('Page2Controller', Page2Controller);
+        angular.module("app").controller('Page3Controller', Page3Controller);
     })(Controllers = MyApp.Controllers || (MyApp.Controllers = {}));
 })(MyApp || (MyApp = {}));
