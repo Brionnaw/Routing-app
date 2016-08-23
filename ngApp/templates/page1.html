@@ -1,5 +1,6 @@
-<h1>Page 1</h1>
+<ul>
+  <li ng-repeat="i in ctrl.info"/>
+      <a ui-sref="Page2({car:i.image})">{{i.brand}} | {{i.model}}</a>
 
-<a ui-sref="Page2">Go to page 2</a>
-<input ng-model="ctrl1.info"/>
-<button ui-sref="Page2({info:ctrl1.info})">Change </button>
+  </li>
+</ul>

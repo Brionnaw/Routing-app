@@ -9,17 +9,17 @@
           url:'/',
           templateUrl:'ngApp/templates/page1.html',
           controller: MyApp.Controllers.Page1Controller,
-          controllerAs:'ctrl1'
+          controllerAs:'ctrl'
         }) .state('Page2', {
-          url:'/page2/:info',
+          url:'/page2/:car',
           templateUrl:'ngApp/templates/page2.html',
           controller: MyApp.Controllers.Page2Controller,
-          controllerAs:'ctrl2'
+          controllerAs:'ctrl'
         }) .state('Page3', {
           url:'/page3',
           templateUrl:'ngApp/templates/page3.html',
           controller: MyApp.Controllers.Page3Controller,
-          controllerAs:'ctrl3'
+          controllerAs:'ctrl'
         })
 
         $urlRouterProvider.otherwise('/');
