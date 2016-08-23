@@ -1,3 +1,5 @@
 <h1>Page 1</h1>
 
 <a ui-sref="Page2">Go to page 2</a>
+<input ng-model="ctrl1.info"/>
+<button ui-sref="Page2({info:ctrl1.info})">Change </button>

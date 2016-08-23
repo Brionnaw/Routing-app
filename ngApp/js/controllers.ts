@@ -1,7 +1,17 @@
 
     namespace MyApp.Controllers {
       export class Page1Controller {
+        public info:string;
+        constructor(
+        public $state: ng.ui.IStateService,
+        public $stateParams: ng.ui.IStateParamsService
+        ) {
 
+          }
+        public test() {
+        console.log(this.info);
+
+        }
       }
       export class Page2Controller {
 

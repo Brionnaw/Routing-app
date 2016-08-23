@@ -3,8 +3,13 @@ var MyApp;
     var Controllers;
     (function (Controllers) {
         var Page1Controller = (function () {
-            function Page1Controller() {
+            function Page1Controller($state, $stateParams) {
+                this.$state = $state;
+                this.$stateParams = $stateParams;
             }
+            Page1Controller.prototype.test = function () {
+                console.log(this.info);
+            };
             return Page1Controller;
         }());
         Controllers.Page1Controller = Page1Controller;

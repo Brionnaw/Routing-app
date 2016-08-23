@@ -7,7 +7,7 @@ var MyApp;
             controller: MyApp.Controllers.Page1Controller,
             controllerAs: 'ctrl1'
         }).state('Page2', {
-            url: '/page2',
+            url: '/page2/:info',
             templateUrl: 'ngApp/templates/page2.html',
             controller: MyApp.Controllers.Page2Controller,
             controllerAs: 'ctrl2'
