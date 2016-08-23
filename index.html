@@ -3,18 +3,19 @@
   <head>
     <meta charset="utf-8">
     <title>Routing app</title>
+    <base href="/" />
   </head>
   <body>
 
-  <input ng-model="hello"/>
-    <p>
-      {{hello}}
-    </p>
+  <ui-view> </ui-view>
     <!-- libraries/frameworks-->
     <script src = "bower_components/angular/angular.min.js" type="text/javascript"> </script>
     <script src ="bower_components/angular-ui-router/release/angular-ui-router.js" type="text/javascript"></script>
 
     <!-- app script -->
     <script src = "ngApp/app.js" type="text/javascript"> </script>
+    <script src="ngApp/js/controllers.js "type="text/javascript">
+
+    </script>
   </body>
 </html>
