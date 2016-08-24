@@ -18,7 +18,7 @@
       // page 2 controller //
       export class Page2Controller {
 
-        public image; //scope variable
+        public image; //scope variable must assign to variable if want to display
         public detail;
         constructor(
           public $stateParams: ng.ui.IStateParamsService
@@ -37,7 +37,7 @@
           public $stateParams: ng.ui.IStateParamsService
         )  {
           let detail = $stateParams["properties"]
-        this.properties = detail;
+        this.properties = detail; //
 
         }
       }
