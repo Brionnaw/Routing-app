@@ -12,7 +12,7 @@ var MyApp;
             controller: MyApp.Controllers.Page2Controller,
             controllerAs: 'ctrl'
         }).state('Page3', {
-            url: '/page3',
+            url: '/page3/:properties',
             templateUrl: 'ngApp/templates/page3.html',
             controller: MyApp.Controllers.Page3Controller,
             controllerAs: 'ctrl'

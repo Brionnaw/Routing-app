@@ -1,6 +1,6 @@
 <ul>
   <li ng-repeat="i in ctrl.info"/>
-      <a ui-sref="Page2({car:i.image})">{{i.brand}} | {{i.model}}</a>
+      <a ui-sref="Page2 ({car:[i.image, i.detail]})">{{i.brand}} | {{i.model}} | Price: {{i.Price}} | Miles:{{i.Miles}}</a>
 
   </li>
 </ul>
